@@ -43,7 +43,7 @@ public class GameList {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, name);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class GameList {
 		if (getClass() != obj.getClass())
 			return false;
 		GameList other = (GameList) obj;
-		return Objects.equals(id, other.id) && Objects.equals(name, other.name);
+		return Objects.equals(id, other.id);
 	}
 	
 }
